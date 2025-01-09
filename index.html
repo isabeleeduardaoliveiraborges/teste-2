@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Carrossel com Logo e Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <!-- Barra de navegação com logo e menu ao lado -->
+    <div class="container mt-3">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-6 col-md-3">
+          <img src="img/image.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <!-- Menu -->
+        <div class="col-6 col-md-9">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container marketing">
+    <!-- Carrossel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.jpg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" class="d-block w-100" alt="Imagem 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/4.png" class="d-block w-100" alt="Imagem 4">
+        </div>
+        <div class="carousel-item">
+          <img src="img/5.jpg" class="d-block w-100" alt="Imagem 5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- Três colunas de texto abaixo do carrossel -->
+    <div class="row mt-4">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Título</h2>
+        <p>Sempre lembre-se de que o computador não possui inteligência, mas adquire inteligência artificial através de três elementos funcionais principais: a capacidade de análise, a capacidade de composição e o raciocínio lógico.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalhes</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Outro Título</h2>
+        <p>Se quisermos usar o computador inteligente para processar a língua árabe, encontramos um grande desafio, especialmente porque nossa língua é caracterizada por sistemas interligados e coesos. No entanto, a inteligência artificial nos permite obter quatro tipos de processamento: o processamento fonético, o processamento morfológico, o processamento sintático e o processamento semântico.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalhes</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal">Terceiro Título para Confirmar a Informação</h2>
+        <p>Graças às pesquisas e técnicas de inteligência artificial, conseguimos transitar da fase de lidar com o físico para a fase de lidar com o lógico. Essa transição refletiu positivamente sobre a maneira como as pessoas lidam com suas línguas vivas, o que significa que deve refletir positivamente também sobre como lidamos com a nossa língua árabe.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalhes</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+  <!-- RODAPÉ -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Voltar ao topo</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Política de privacidade</a> &middot; <a href="#">Termos de uso</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
